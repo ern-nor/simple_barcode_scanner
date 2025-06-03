@@ -8,7 +8,7 @@ PODS:
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
-  - simple_barcode_scanner (from `.symlinks/plugins/simple_barcode_scanner/ios`)
+  - simple_barcode_scanner (from `.symlinks/plugins/simple_barcode_scanner_plus/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
   permission_handler_apple:
     :path: ".symlinks/plugins/permission_handler_apple/ios"
   simple_barcode_scanner:
-    :path: ".symlinks/plugins/simple_barcode_scanner/ios"
+    :path: ".symlinks/plugins/simple_barcode_scanner_plus/ios"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7

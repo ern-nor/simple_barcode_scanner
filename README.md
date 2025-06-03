@@ -11,11 +11,11 @@ simple_barcode_scanner that let you scan barcode and qr code in mobile,web and w
 
 Android         |  IOS
 :-------------------------:|:-------------------------:
-<img src="https://github.com/CodingWithTashi/simple_barcode_scanner/blob/main/example/demo/scanner_android.gif?raw=true" alt="drawing" width="350" height="650"/>  |  <img src="https://github.com/CodingWithTashi/simple_barcode_scanner/blob/main/example/demo/barcode_mobile.gif?raw=true" width="400" height="600" alt="drawing"/>
+<img src="https://github.com/CodingWithTashi/simple_barcode_scanner_plus/blob/main/example/demo/scanner_android.gif?raw=true" alt="drawing" width="350" height="650"/>  |  <img src="https://github.com/CodingWithTashi/simple_barcode_scanner_plus/blob/main/example/demo/barcode_mobile.gif?raw=true" width="400" height="600" alt="drawing"/>
 
 Window         |  Web
 :-------------------------:|:-------------------------:
-<img src="https://github.com/CodingWithTashi/simple_barcode_scanner/blob/main/example/demo/window_scanner.gif?raw=true" alt="drawing" width="600" height="550"/>  |  <img src="https://github.com/CodingWithTashi/simple_barcode_scanner/blob/main/example/demo/barcode_web.gif?raw=true" width="550" height="600" alt="drawing"/>
+<img src="https://github.com/CodingWithTashi/simple_barcode_scanner_plus/blob/main/example/demo/window_scanner.gif?raw=true" alt="drawing" width="600" height="550"/>  |  <img src="https://github.com/CodingWithTashi/simple_barcode_scanner_plus/blob/main/example/demo/barcode_web.gif?raw=true" width="550" height="600" alt="drawing"/>
 
 ## Credit
 * This plugin is built upon the [flutter_barcode_scanner](https://github.com/AmolGangadhare/flutter_barcode_scanner) for Android and iOS. Since the original plugin is no longer actively maintained, I have forked the repository and implemented additional features on top of it. Special thanks to Amol Gangadhare for his work.
@@ -38,7 +38,7 @@ simple_barcode_scanner: ^0.2.0
 ```   
 Import the library:
 ```dart
-import 'package:simple_barcode_scanner/simple_barcode_scanner.dart';
+import 'package:simple_barcode_scanner_plus/simple_barcode_scanner.dart';
 
 ```
 ## Usage
@@ -116,8 +116,8 @@ String? res = await SimpleBarcodeScanner.scanBarcode(
 Feel free to fork and send pull request.
 * iOS support may be delayed as I currently do not have access to an iOS device for testing. Contributions and testing help from the community are welcome!
 * If you have any questions, feedback or ideas,You can [create an
-  issue](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/new). If you enjoy this
-  project, I'd appreciate your [🌟 on GitHub](https://github.com/CodingWithTashi/simple_barcode_scanner/).
+  issue](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/new). If you enjoy this
+  project, I'd appreciate your [🌟 on GitHub](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/).
 
 ## You can also buy me a cup of coffee
 <a href="https://www.buymeacoffee.com/codingwithtashi"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width=200px></a>

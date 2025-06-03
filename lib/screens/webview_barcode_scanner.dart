@@ -4,8 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:permission_handler/permission_handler.dart';
-import 'package:simple_barcode_scanner/constant.dart';
-import 'package:simple_barcode_scanner/enum.dart';
+import 'package:simple_barcode_scanner_plus/constant.dart';
+import 'package:simple_barcode_scanner_plus/enum.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../barcode_appbar.dart';

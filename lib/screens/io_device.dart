@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:simple_barcode_scanner/enum.dart';
-import 'package:simple_barcode_scanner/screens/barcode_controller.dart';
-import 'package:simple_barcode_scanner/screens/window.dart';
+import 'package:simple_barcode_scanner_plus/enum.dart';
+import 'package:simple_barcode_scanner_plus/screens/barcode_controller.dart';
+import 'package:simple_barcode_scanner_plus/screens/window.dart';
 
 import '../barcode_appbar.dart';
 import '../constant.dart';

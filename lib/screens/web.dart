@@ -1,8 +1,8 @@
 import 'dart:ui_web' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:simple_barcode_scanner/constant.dart';
-import 'package:simple_barcode_scanner/enum.dart';
+import 'package:simple_barcode_scanner_plus/constant.dart';
+import 'package:simple_barcode_scanner_plus/enum.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'package:web/web.dart' as html;
 

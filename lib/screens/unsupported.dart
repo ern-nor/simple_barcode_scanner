@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:simple_barcode_scanner/barcode_appbar.dart';
-import 'package:simple_barcode_scanner/enum.dart';
-import 'package:simple_barcode_scanner/screens/barcode_controller.dart';
+import 'package:simple_barcode_scanner_plus/barcode_appbar.dart';
+import 'package:simple_barcode_scanner_plus/enum.dart';
+import 'package:simple_barcode_scanner_plus/screens/barcode_controller.dart';
 
 class BarcodeScanner extends StatelessWidget {
   final String lineColor;

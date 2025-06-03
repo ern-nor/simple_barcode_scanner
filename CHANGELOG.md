@@ -1,16 +1,16 @@
 ## 0.3.0
 * Removes references to Flutter v1 Android embedding classes
 ## 0.2.6
-* Special thanks to [Kurczaak](https://github.com/Kurczaak) for his contribution in [PR #102](https://github.com/CodingWithTashi/simple_barcode_scanner/pull/102).
-* Special thanks to [Natália](https://github.com/nataliafurtado) for her contribution in [PR #103](https://github.com/CodingWithTashi/simple_barcode_scanner/pull/103)
+* Special thanks to [Kurczaak](https://github.com/Kurczaak) for his contribution in [PR #102](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/pull/102).
+* Special thanks to [Natália](https://github.com/nataliafurtado) for her contribution in [PR #103](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/pull/103)
 ## 0.2.5
-* Special thanks to [Carlos](https://github.com/carlosfiori) for his contribution in [PR #94](https://github.com/CodingWithTashi/simple_barcode_scanner/pull/94).
+* Special thanks to [Carlos](https://github.com/carlosfiori) for his contribution in [PR #94](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/pull/94).
 ## 0.2.4
 * Downgraded SDK from 35 to 34 to support older flutter project
 ## 0.2.3
 * Fixed web build issue
 ## 0.2.2
-* Fixed web https://github.com/CodingWithTashi/simple_barcode_scanner/issues/85
+* Fixed web https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/85
 ## 0.2.1
 * Added `SimpleBarcodeScanner` widget to scan barcode
 * Looking for feedback to improve the use case
@@ -44,18 +44,18 @@
 * Fixed depreciated issue
 * Added BarcodeAppBar class
 * Depreciated centerTitle and appBarTitle, use [BarcodeAppBar] instead
-* Fixed [68](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/68)
+* Fixed [68](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/68)
 
 ## 0.1.4
 * Added BarcodeAppBar class
 * Depreciated centerTitle and appBarTitle, use [BarcodeAppBar] instead
-* Fixed [68](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/68)
+* Fixed [68](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/68)
 *
 ## 0.1.3
 * Package updated
 * Example project updated
 * flutter barcode scanner package code is now added as part of simple barcode scanner since package is no longer actively maintained.
-* fixed [66](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/66)
+* fixed [66](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/66)
 
 ## 0.1.2
 * Package updated
@@ -63,7 +63,7 @@
 * Minor code refactor
 
 ## 0.1.1
-* Fixed [46](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/46)
+* Fixed [46](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/46)
 * Other bug fixes
 
 ## 0.1.0
@@ -73,15 +73,15 @@
 * Downgraded sdk from to 4 to 3 to support older flutter project
 
 ## 0.0.9
-* Thanks to [treyhendon](https://github.com/treyhendon). Added UPC Barcode support [41](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/41)
+* Thanks to [treyhendon](https://github.com/treyhendon). Added UPC Barcode support [41](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/41)
 
 ## 0.0.8
 * Fixed window permission issue
 * refactored code
 
 ## 0.0.7
-* Fixed performance issue with window [5](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/5)
-* Added appBar title and centerTitle param [11](https://github.com/CodingWithTashi/simple_barcode_scanner/issues/11)
+* Fixed performance issue with window [5](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/5)
+* Added appBar title and centerTitle param [11](https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues/11)
 
 ## 0.0.6
 * Document update

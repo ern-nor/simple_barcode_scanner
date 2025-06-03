@@ -2,7 +2,7 @@ name: simple_barcode_scanner_plus
 description: simple_barcode_scanner that let you scan barcode and qr code in mobile, web and windows.
 version: 0.3.0
 homepage: https://github.com/CodingWithTashi/simple_barcode_scanner
-issue_tracker: https://github.com/CodingWithTashi/simple_barcode_scanner/issues
+issue_tracker: https://github.com/CodingWithTashi/simple_barcode_scanner_plus/issues
 
 platforms:
   android:
@@ -41,8 +41,8 @@ dev_dependencies:
 flutter:
   # To add assets to your package, add an assets section, like this:
   assets:
-    - packages/simple_barcode_scanner/assets/barcode.html
-    - packages/simple_barcode_scanner/assets/html5-qrcode.min.js
+    - packages/simple_barcode_scanner_plus/assets/barcode.html
+    - packages/simple_barcode_scanner_plus/assets/html5-qrcode.min.js
   plugin:
     platforms:
       android:
