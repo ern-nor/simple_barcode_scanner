@@ -83,11 +83,11 @@ class WebviewBarcodeScanner extends StatelessWidget {
     return await Permission.camera.status.isGranted;
   }
 
-  String getAssetFileUrl({required String asset}) {
-    final assetsDirectory = p.join(p.dirname(Platform.resolvedExecutable),
-        'data', 'flutter_assets', asset);
-    return Uri.file(assetsDirectory).toString();
-  }
+  // String getAssetFileUrl({required String asset}) {
+  //   final assetsDirectory = p.join(p.dirname(Platform.resolvedExecutable),
+  //       'data', 'flutter_assets', asset);
+  //   return Uri.file(assetsDirectory).toString();
+  // }
 
   Future<bool> initPlatformState(
       {required WebViewController controller}) async {
@@ -95,7 +95,7 @@ class WebviewBarcodeScanner extends StatelessWidget {
 
     try {
       await controller.loadFlutterAsset(
-          getAssetFileUrl(asset: PackageConstant.barcodeFilePath));
+          'packages/simple_barcode_scanner_plus/assets/barcode.html');
 
       /// Listen to web to receive barcode
       // controller.webMessage.listen((event) {
