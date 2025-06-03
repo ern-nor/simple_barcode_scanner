@@ -1,4 +1,4 @@
-name: simple_barcode_scanner
+name: simple_barcode_scanner_plus
 description: simple_barcode_scanner that let you scan barcode and qr code in mobile, web and windows.
 version: 0.3.0
 homepage: https://github.com/CodingWithTashi/simple_barcode_scanner
