@@ -48,35 +48,33 @@ class WindowBarcodeScanner extends StatelessWidget {
       isPermissionGranted = granted;
     });
 
-    return Scaffold(
-      appBar: _buildAppBar(controller, context),
-      body: FutureBuilder<bool>(
-          future: initPlatformState(
-            controller: controller,
-          ),
-          builder: (context, snapshot) {
-            if (snapshot.hasData && snapshot.data != null) {
-              return Webview(
-                controller,
-                permissionRequested: (url, permissionKind, isUserInitiated) =>
-                    _onPermissionRequested(
-                  url: url,
-                  kind: permissionKind,
-                  isUserInitiated: isUserInitiated,
-                  context: context,
-                  isPermissionGranted: isPermissionGranted,
-                ),
-              );
-            } else if (snapshot.hasError) {
-              return Center(
-                child: Text(snapshot.error.toString()),
-              );
-            }
-            return const Center(
-              child: CircularProgressIndicator(),
+    return FutureBuilder<bool>(
+        future: initPlatformState(
+          controller: controller,
+        ),
+        builder: (context, snapshot) {
+          if (snapshot.hasData && snapshot.data != null) {
+            return Webview(
+              controller,
+              permissionRequested: (url, permissionKind, isUserInitiated) =>
+                  _onPermissionRequested(
+                url: url,
+                kind: permissionKind,
+                isUserInitiated: isUserInitiated,
+                context: context,
+                isPermissionGranted: isPermissionGranted,
+              ),
             );
-          }),
-    );
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text(snapshot.error.toString()),
+            );
+          }
+
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        });
   }
 
   /// Checks if camera permission has already been granted
