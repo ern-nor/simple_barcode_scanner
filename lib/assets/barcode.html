@@ -28,16 +28,41 @@
      html5QrCode.stop();
      /* handle success for web */
      window.parent.postMessage(decodedText, "*");
+     
+         // build the payload
+    const payload = {
+      methodName: "successCallback",
+      data: decodedText
+    };
+
+    // 1) webview_flutter: send via your JS channel (e.g. “MessageInvoker”)
+    if (
+      window.MessageInvoker &&
+      typeof window.MessageInvoker.postMessage === "function"
+    ) {
+      // post the JSON-stringified payload
+      window.MessageInvoker.postMessage(JSON.stringify(payload));
+
+    // 2) fallback for other hosts (e.g. WinUI2’s WebView2)
+    } else if (
+      window.chrome &&
+      chrome.webview &&
+      typeof chrome.webview.postMessage === "function"
+    ) {
+      chrome.webview.postMessage(payload);
+
+    } else {
+      console.warn("No host bridge found for postMessage()");
+    }
 
      /* handle success for window */
-     if (window.chrome.webview != "undefined") {
-         var param = {
-             "methodName": "successCallback",
-             "data": decodedText
-         }
-         window.chrome.webview.postMessage(param);
-     }
-
+    //  if (window.chrome.webview != "undefined") {
+    //      var param = {
+    //          "methodName": "successCallback",
+    //          "data": decodedText
+    //      }
+    //      window.chrome.webview.postMessage(param);
+    //  }
  };
  const config = {
      fps: 10,

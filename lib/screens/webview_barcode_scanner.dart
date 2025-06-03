@@ -94,21 +94,6 @@ class WebviewBarcodeScanner extends StatelessWidget {
     String? barcodeNumber;
 
     try {
-      await controller.loadFlutterAsset(
-          'packages/simple_barcode_scanner_plus/assets/barcode.html');
-
-      /// Listen to web to receive barcode
-      // controller.webMessage.listen((event) {
-      //   if (event['methodName'] == "successCallback") {
-      //     if (event['data'] is String &&
-      //         event['data'].isNotEmpty &&
-      //         barcodeNumber == null) {
-      //       barcodeNumber = event['data'];
-      //       onScanned(barcodeNumber!);
-      //     }
-      //   }
-      // });
-
       await controller.setJavaScriptMode(JavaScriptMode.unrestricted);
 
       await controller.addJavaScriptChannel('MessageInvoker',
@@ -126,6 +111,21 @@ class WebviewBarcodeScanner extends StatelessWidget {
           }
         }
       });
+
+      await controller.loadFlutterAsset(
+          'packages/simple_barcode_scanner_plus/assets/barcode.html');
+
+      /// Listen to web to receive barcode
+      // controller.webMessage.listen((event) {
+      //   if (event['methodName'] == "successCallback") {
+      //     if (event['data'] is String &&
+      //         event['data'].isNotEmpty &&
+      //         barcodeNumber == null) {
+      //       barcodeNumber = event['data'];
+      //       onScanned(barcodeNumber!);
+      //     }
+      //   }
+      // });
     } catch (e) {
       rethrow;
     }
